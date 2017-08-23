@@ -1,0 +1,27 @@
+Con el siguiente comando se compila y se crea el ejecutable, se ejecuta y se visualiza la llamada al sistema:
+gcc -m32 --no-builtin main1.c -o main1.o ;./main1.o ;echo $?
+
+Despues se obtiene el codigo en ensamblador:
+gcc -m32 -S main1.c -o main1.s
+
+
+
+
+
+rm *.o *.s
+
+
+gcc -m32 --no-builtin main1.c -o main1.o ;./main1.o ;echo $?
+gcc -m32 --no-builtin main2.c -o main2.o ;./main2.o ;echo $?
+gcc -m32 --no-builtin main3.c -o main3.o ;./main3.o ;echo $?
+gcc -m32 --no-builtin main4.c -o main4.o ;./main4.o ;echo $?
+gcc -m32 --no-builtin main5.c -o main5.o ;./main5.o ;echo $?
+gcc -m32 --no-builtin main6.c -o main6.o ;./main6.o ;echo $?
+
+
+gcc -m32 -S main1.c -o main1.s
+gcc -m32 -S main2.c -o main2.s
+gcc -m32 -S main3.c -o main3.s
+gcc -m32 -S main4.c -o main4.s
+gcc -m32 -S main5.c -o main5.s
+gcc -m32 -S main6.c -o main6.s
