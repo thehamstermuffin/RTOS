@@ -95,6 +95,7 @@ int main(int argc, char **argv){
                                 sleep(3);
 				*varshar = 1;
                                 p2_puede_entrar = 0;
+				printf("Saliendo del proceso padre\n");
 			}
 		}
         }
